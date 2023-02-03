@@ -21,7 +21,7 @@ cred = AzureCliCredential()
 
 if __name__ == "__main__":
     # Use az login
-    client = PurviewClient( account_name = "Purview-1P-Privacy-Test", authentication = cred)
+    client = PurviewClient( account_name = "Purview-Instance-Name", authentication = cred)
    
     # SETUP: This is just setting up the excel file for you
     file_path = './Data_Map_Lineage_HealthCare.xlsx'
