@@ -2,6 +2,11 @@
 A python script to help work with the apache atlas REST APIs and create datamap and classification on Purview
 
 
+Prerequisites:
+- install azure-identity by running pip install azure-identity
+
+
+
 Using Excel to Accelerate Metadata Uploads
 Bulk upload entities.
 Upload entities / assets for built-in or custom types.
@@ -20,5 +25,11 @@ Step 2: Run the command "az login" first so that your CLI is set up to connect t
 Step 3: Update the Purview Account name and File location in the script
 Step 4: Execute the script
 
-Reference:
+
+
+Additional Resources
+Learn more about this package in the PyApacheAtlas docs.
+The Apache Atlas REST API
+The Purview CLI Package provides CLI support.
+Purview REST API Official Docs
 https://github.com/wjohnson/pyapacheatlas
