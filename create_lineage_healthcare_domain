@@ -6,6 +6,7 @@ import json
 import os
 import tkinter as tk
 from tkinter import simpledialog
+from tkinter import messagebox
 
 root = tk.Tk()
 root.withdraw()
@@ -55,4 +56,5 @@ if __name__ == "__main__":
 
     print(json.dumps([table_col_results, lineage_results], indent=2))
 
-    print("Datamap created succesfully")
+    messagebox.showinfo("Purview Privacy", "Data Map Created Succesfully")
+
