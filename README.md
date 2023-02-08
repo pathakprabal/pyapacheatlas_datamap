@@ -3,7 +3,11 @@ A python script to help work with the apache atlas REST APIs and create datamap 
 
 
 Prerequisites:
+- install python 3.8.x
 - install azure-identity by running pip install azure-identity
+- install openpyxl by running pip install openpyxl
+- install pyapacheatlas by running pip install pyapacheatlas
+
 
 
 
