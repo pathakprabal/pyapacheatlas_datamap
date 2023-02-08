@@ -64,4 +64,4 @@ if __name__ == "__main__":
     parser.add_argument('-PurviewAccount', required=True, dest='acctName', type=str, help='Name of the Purview account')
     args = parser.parse_args()
 
-    UploadToPurview(args.excel, args.acctName)
+    UploadToPurview(args.excel_path, args.acctName)
