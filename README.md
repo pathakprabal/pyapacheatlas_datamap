@@ -24,14 +24,14 @@ Bulk upload of classification definitions (Purview Classification Rules not supp
 
 
 Using Exel to create Datamap and Classification on Purview acoount:
-Step 1: Downlod the file DataMap_lineage_Healthcare.xlsx
-Step 2: Run the command "az login" first so that your CLI is set up to connect to Purview as YOU
-Step 3: Update the Purview Account name and File location in the script
-Step 4: Execute the script
+- Step 1: Downlod the file DataMap_lineage_Healthcare.xlsx
+- Step 2: Run the command "az login" first so that your CLI is set up to connect to Purview as YOU
+- Step 3: Update the Purview Account name (line 24 -account_name = "Purview-Instance-Name") and File location in the script (line 27 )
+- Step 4: Execute the script
 
 
 
-Additional Resources
+- Additional Resources
 Learn more about this package in the PyApacheAtlas docs.
 The Apache Atlas REST API
 The Purview CLI Package provides CLI support.
