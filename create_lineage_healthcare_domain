@@ -4,6 +4,11 @@
 
 import json
 import os
+import tkinter as tk
+from tkinter import simpledialog
+
+root = tk.Tk()
+root.withdraw()
 
 from openpyxl import Workbook
 from openpyxl import load_workbook
@@ -20,11 +25,12 @@ from azure.identity import AzureCliCredential
 cred = AzureCliCredential()
 
 if __name__ == "__main__":
-    # Use az login
-    client = PurviewClient( account_name = "Purview-Instance-Name", authentication = cred)
+    # Inputs for AccountName and File Location
+    acctname=simpledialog.askstring("Purview Privacy Private Preview", "Please enter the azure account name?", parent=root)
+    client = PurviewClient( account_name = acctname, authentication = cred)
    
     # SETUP: This is just setting up the excel file for you
-    file_path = './Data_Map_Lineage_HealthCare.xlsx'
+    file_path = simpledialog.askstring("Purview Privacy Private Preview", "Please enter the file path?", parent=root)
     excel_config = ExcelConfiguration()
     excel_reader = ExcelReader(excel_config)
 
