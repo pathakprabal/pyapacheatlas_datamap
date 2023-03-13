@@ -23,6 +23,14 @@ A python script to help work with the apache atlas REST APIs and create datamap 
 - Bulk upload custom type definitions.
 - Bulk upload of classification definitions (Purview Classification Rules not supported).
 
+**Excel Template Details**
+
+- Tab "BulkEntities": Enter metadata details in this tab, key point to remember is that qualified named need to be unique for both table and columns.
+- Tab "UpdateLineage": Enter table level relationship. 
+- Tab "ColumnMapping": Enter Column level relationship.
+- Tab "EntityDefs": Enter entity details.
+- Tab "ClassificationDefs": In case any custom classification need to be defined. 
+
 
 
 **Using Exel to create Datamap and Classification on Purview account:**
